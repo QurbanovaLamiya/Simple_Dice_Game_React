@@ -1,12 +1,13 @@
-import { Component, Fragment } from "react";
+import { Component } from "react";
 import "./App.css";
+import RollDice from "./components/RollDice";
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        <h1>Dice</h1>
-      </Fragment>
+      <div className="container">
+        <RollDice />
+      </div>
     );
   }
 }
