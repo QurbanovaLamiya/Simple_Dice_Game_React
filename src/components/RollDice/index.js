@@ -19,13 +19,13 @@ class RollDice extends Component {
     let secondDice = Math.ceil(Math.random() * 6);
 
     this.setState({
-      firstDiceImage: DiceData[`dice${firstDice}`],
-      secondDiceImage: DiceData[`dice${secondDice}`],
       rolling: true,
     });
 
     setTimeout(() => {
       this.setState({
+        firstDiceImage: DiceData[`dice${firstDice}`],
+        secondDiceImage: DiceData[`dice${secondDice}`],
         rolling: false,
       });
     }, 1200);
